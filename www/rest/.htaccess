@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule capabilities capabilities.php [L]
+
+<Files "manifest">
+ ForceType 'application/json'
+</Files>

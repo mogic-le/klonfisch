@@ -6,20 +6,15 @@ header('Content-Type: application/xml');
 <manifest>
   <id><?php echo $klonfischUuid; ?></id>
   <name>Klonfisch</name>
-  <typeId>fecru</typeId>
-  <version>2.7.15</version>
-  <buildNumber>2007015</buildNumber>
-  <applinksVersion>3.7.0</applinksVersion>
+  <typeId>stash</typeId>
+  <version>4.4.1</version>
+  <buildNumber>4004001</buildNumber>
+  <applinksVersion>5.0.5</applinksVersion>
   <inboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.BasicAuthenticationProvider</inboundAuthenticationTypes>
-<!--
-  <inboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.OAuthAuthenticationProvider</inboundAuthenticationTypes>
-  <inboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.TrustedAppsAuthenticationProvider</inboundAuthenticationTypes>
--->
+  <inboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.TwoLeggedOAuthWithImpersonationAuthenticationProvider</inboundAuthenticationTypes>
   <outboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.BasicAuthenticationProvider</outboundAuthenticationTypes>
-<!--
-  <outboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.OAuthAuthenticationProvider</outboundAuthenticationTypes>
-  <outboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.TrustedAppsAuthenticationProvider</outboundAuthenticationTypes>
--->
-  <publicSignup>true</publicSignup>
+  <outboundAuthenticationTypes>com.atlassian.applinks.api.auth.types.TwoLeggedOAuthWithImpersonationAuthenticationProvider</outboundAuthenticationTypes>
+  <publicSignup>false</publicSignup>
   <url><?php echo $klonfischUrl; ?></url>
+  <iconUri><?php echo $klonfischUrl; ?>/favicon.png</iconUri>
 </manifest>

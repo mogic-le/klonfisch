@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule repository repository.php [L]
+
+<Files "repository">
+ ForceType 'application/json'
+</Files>

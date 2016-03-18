@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule smart-commit smart-commit.json [L]
+
+<Files "smart-commit">
+ ForceType 'application/json'
+</Files>

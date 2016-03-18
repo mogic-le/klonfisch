@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule capabilities capabilities.json [L]
+
+<Files "capabilities">
+ ForceType 'application/json'
+</Files>
